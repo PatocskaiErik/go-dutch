@@ -12,7 +12,7 @@ public class GoDutch {
 
         double totalAmount = billTotal * 1.1;
 
-        int partToPay = (int) Math.ceil(totalAmount / numberOfFriends);
+        int partToPay = (int) Math.round(totalAmount / numberOfFriends);
 
         if (billTotal < 0) {
             System.out.println("Bill total amount cannot be negative");
